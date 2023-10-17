@@ -1,0 +1,19 @@
+package projectoct.realtime;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class DataProviderTest {
+	
+  @Test(dataProvider = "UsingDataProvider")
+  public void LoginParameter(String  username,String  password) {
+	  
+	  System.out.println("Username is : "+username);
+	  System.out.println("Password is : "+password);
+	  
+  }
+  @DataProvider
+  private Object[][] UsingDataProvider() {
+	return new Object[][] {{"aaa","123"},{"bbb","456"}};
+  }
+}

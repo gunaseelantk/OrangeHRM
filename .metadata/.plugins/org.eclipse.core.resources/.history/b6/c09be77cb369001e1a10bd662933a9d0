@@ -1,0 +1,25 @@
+package com.testrunner;
+
+import org.junit.BeforeClass;
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src\\test\\java\\com\\featurefile\\FeatureExample1.feature", 
+glue = "com.stepdefenition")
+public class TestRunnerExample1 {
+	@BeforeClass
+	public static void setup() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gunas\\eclipse-workspace\\Selenium\\driver\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().window().maximize();
+	
+	}
+	
+
+}

@@ -1,0 +1,44 @@
+package com.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Frame2 {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gunas\\eclipse-workspace\\Selenium\\driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://letcode.in/frame");
+		//driver.manage().window().maximize();
+
+		driver.switchTo().frame(0);
+		WebElement frame0 = driver
+				.findElement(By.id("Click"));
+		Thread.sleep(3000);
+		frame0.click();
+//		(//input[@placeholder='Enter email'])[1]
+		driver.switchTo().defaultContent();
+		
+//		driver.switchTo().frame(5);
+//		WebElement frame1 = driver
+//				.findElement(By.xpath("/html/body/app-root/app-innerframe/div/div/div/div/div/input"));
+//		//Thread.sleep(3000);
+//		frame1.sendKeys("guna@mail.com");
+		
+//		List<WebElement> findElements = driver.findElements(By.tagName("iframe"));
+//		int size = findElements.size();
+//		System.out.println(size);
+		
+		driver.switchTo().frame(2);
+		WebElement frame1 = driver
+				.findElement(By.id("Click"));
+		Thread.sleep(3000);
+		frame1.click();
+
+	
+	}
+
+}

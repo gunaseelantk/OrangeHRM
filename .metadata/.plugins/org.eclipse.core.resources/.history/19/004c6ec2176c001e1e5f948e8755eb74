@@ -1,0 +1,40 @@
+package com.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FindFrame {
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\\\Users\\\\gunas\\\\eclipse-workspace\\\\Selenium\\\\driver\\\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+
+		// Navigate to the web page
+		driver.get("https://letcode.in/frame");
+
+		WebElement iframeElement = driver.findElement(By.xpath("/html/body/app-root/app-frames/app-pageheader/section/div/div/h1"));S
+		
+		 // Switch to the first frame
+		// Perform actions inside the iframe
+		WebElement iframeBody = driver.findElement(By.xpath
+				("/html/body/app-root/app-innerframe/div/div/div/div/div/input"));
+		iframeBody.sendKeys("Hello, iframe!");
+
+		// Switch back to the main content
+		driver.switchTo().defaultContent();
+
+
+		
+
+
+	}
+
+	private static Object switchTo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.lao.control_statements;
+
+public class Example2ConditionStatement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

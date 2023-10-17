@@ -1,0 +1,20 @@
+package com.lao;
+
+public class Example1BankAccount {
+
+	Long accountNumber = 987654321012l;
+	String holderName = "gunaseelan";
+	int accountBalance = 60000;
+
+	private void AccountBalance() {
+		// TODO Auto-generated method stub
+		System.out.println("Account Balance is : "+accountBalance);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Example1BankAccount account=new Example1BankAccount();
+		account.AccountBalance();
+	}
+
+}

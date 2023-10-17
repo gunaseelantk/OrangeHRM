@@ -1,0 +1,12 @@
+package com.lao;
+
+public class Example3Contructor {
+		
+	String name;
+	String type;
+	
+	public static void main(String[] args) {
+		Example3Contructor contructor = new Example3Contructor();
+		System.out.println(contructor);
+	}
+}

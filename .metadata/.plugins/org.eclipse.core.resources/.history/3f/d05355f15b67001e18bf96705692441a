@@ -1,0 +1,14 @@
+package projectoct.realtime;
+
+import org.testng.annotations.Test;
+
+public class DataProviderTest {
+	String username;
+	String password;
+  @Test
+  public void LoginParameter(String username,String password) {
+	  System.out.println("Username is : "+username);
+	  System.out.println("Password is : "+password);
+	  
+  }
+}

@@ -1,0 +1,21 @@
+package testNGfeatures.realtime;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class AssertTypes {
+	// Hard Assert
+  @Test
+  public void f() {
+	  String name="guna";
+	  String name2="seelan";
+	  Assert.assertEquals(name, name2);
+  }
+  @Test
+  private void f1() {
+	  String name="guna";
+	  String name2="guna";
+	  Assert.assertEquals(name, name2);
+
+}
+}

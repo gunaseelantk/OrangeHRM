@@ -1,0 +1,52 @@
+package com.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class RadioButton {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\gunas\\eclipse-workspace\\Selenium\\driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://letcode.in/radio");
+		Thread.sleep(2000);
+
+		WebElement selectanyone = driver.findElement(By.id("yes"));
+		selectanyone.click();
+
+		WebElement confirmselected = driver.findElement(By.id("two"));
+		confirmselected.click();
+		boolean selected = confirmselected.isSelected();
+		System.out.println(selected);
+		
+		WebElement findbug = driver.findElement(By.id("nobug"));
+		findbug.click();
+		//boolean selected2 = findbug.isSelected();
+		
+		WebElement bug = driver.findElement(By.id("bug"));
+		bug.click();
+		//boolean selected3 = bug.isSelected();
+		
+		if(findbug.isSelected()==bug.isSelected()) {
+			System.out.println("bug in this radio button");
+		}
+		else {
+			System.out.println("no bug in this radio button");
+		}
+		
+		WebElement findselected = driver.findElement(By.id("foo"));
+		String foo = findselected.getAttribute("value");
+		if(findselected.isSelected()) {
+		System.out.println(foo);
+		}
+		
+		WebElement findselected2 = driver.findElement(By.id("notfoo"));
+		String notfoo = findselected2.getAttribute("value");
+		if(findselected2.isSelected()) {
+			System.out.println(notfoo);
+		}
+
+	}
+}

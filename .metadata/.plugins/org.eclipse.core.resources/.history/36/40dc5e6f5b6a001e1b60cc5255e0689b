@@ -1,0 +1,15 @@
+package com.lao.statictypes;
+
+public class StaticVariable {
+	
+	static int accountbalance;
+	String Deposited_by;
+	
+	public static void main(String[] args) {
+		
+		StaticVariable staticVariable=new StaticVariable();
+		staticVariable.Deposited_by = "ram";
+		accountbalance=1000;
+	}
+
+}

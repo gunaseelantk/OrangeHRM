@@ -1,0 +1,15 @@
+package com.lao;
+
+public class Example2ReturnType {
+	
+	int collectionamount=1000;
+	
+	private int CollectAndGiveToMe() {
+		// TODO Auto-generated method stub
+
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

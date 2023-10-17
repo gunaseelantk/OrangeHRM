@@ -1,0 +1,13 @@
+package com.lao;
+
+public class Example3ContructorParentclass {
+	String name;
+	String type;
+	// non parameterized constructor
+	Example3ContructorParentclass() {
+
+		name = "bike";
+		type = "two wheeler";
+
+	}
+}
