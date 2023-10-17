@@ -1,9 +1,0 @@
-package testNGfeatures.realtime;
-
-import org.testng.annotations.Test;
-
-public class Asserttypes {
-  @Test
-  public void f() {
-  }
-}

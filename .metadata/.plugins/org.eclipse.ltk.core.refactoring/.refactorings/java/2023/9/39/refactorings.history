@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.javaclass&apos; to &apos;com.java&apos;&#x0D;&#x0A;- Original project: &apos;java&apos;&#x0D;&#x0A;- Original element: &apos;java/src/com.javaclass&apos;&#x0D;&#x0A;- Renamed element: &apos;java/src/com.java&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.javaclass&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.javaclass" name="com.java" qualified="false" references="true" stamp="1695882700121" textual="false" version="1.0"/>
-</session>
